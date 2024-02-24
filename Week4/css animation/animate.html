@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .ani1{
+            width: 100px;
+            height: 100px;
+            animation-name: color1;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+            animation-timing-function: ease;
+            background-color: #31cfde;
+            border: 2px solid black;
+            transform: rotate(30deg);
+        }
+        .ani2{
+            width: 100px;
+            animation: color2;
+            height: 100px;
+            animation-iteration-count: infinite;
+            background-color: #85de31;
+            border: 2px solid black;
+            transform: skew(22deg);
+        }
+        .ani3{
+            width: 100px;
+            height: 100px;
+            animation-name: color3;
+            animation-iteration-count: infinite;
+            background-color: #de31d8;
+            border: 2px solid black;
+            transform: scale(1,0.8);
+        }
+        @keyframes color1{
+            0%{
+                margin-left: 10vw;
+                transform: rotate(0deg);
+            }
+            25%{
+                margin-left: 50vw;
+                transform: rotate(90deg);
+            }
+            50%{
+                margin-left: 90vw;
+                transform: rotate(180deg);
+            }
+            75%{
+                margin-left: 50vw;
+                transform: rotate(270deg);
+            }
+            100%{
+                margin-left: 10vw;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ani1">BOX-A</div>
+    <div class="ani2">BOX-B</div>
+    <div class="ani3">BOX-C</div>
+</body>
+</html>

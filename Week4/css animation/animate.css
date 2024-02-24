@@ -1,0 +1,65 @@
+.ani1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 146, 127);
+
+    animation-name: color1;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+
+.ani2{
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(71, 226, 221);
+    animation-name: color2;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-direction: reverse;
+}
+
+@keyframes color1 {
+    0%{
+        left: 50px;
+        width: 100px;
+    }
+    40%{
+        height: 300px;
+        width: 300px;
+        background-color: #d872a5;
+    }
+    100%{
+        left: 50px;
+        width: 100px;
+    }
+}
+
+@keyframes color2 {
+    0%{
+        left: 50px;
+        width: 100px;
+    }
+    40%{
+        height: 300px;
+        width: 300px;
+        background-color: #d872a5;
+    }
+    100%{
+        left: 50px;
+        width: 100px;
+    }
+}
